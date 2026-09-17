@@ -16,7 +16,23 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Booking.init({
-    jumlahTiket: DataTypes.INTEGER,
+    jumlahTiket: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        notEmpty: {
+          msg: "Jumlah required"
+      }, 
+      notEmpty: {
+        msg: "Jumlah required"
+      },
+      MaxTwo(value) {
+        if (value > 2 ) {
+          throw new Error("Only 2 Maximum ticket per account")
+        }
+      }
+    },
+    },
     bandara: DataTypes.STRING,
     tanggalBerangkat: DataTypes.DATE,
     UserId: DataTypes.INTEGER

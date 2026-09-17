@@ -2,6 +2,7 @@ const {UserProfile, User, Booking, Plane, Ticket} = require('../models')
 const {Op} = require('sequelize')
 const fs = require('fs').promises
 const formatRupiah = require('../helper/rupiah')
+const QRCode = require('qrcode')
 
 
 class CreateTicket{
@@ -11,6 +12,8 @@ class CreateTicket{
             // console.log(req.session.user.id);
             const user = req.session.user
             const id = user.id
+            const {message} = req.query
+            console.log(req.query);
             let data = await UserProfile.findOne({
                 where: {
                     id: id
@@ -24,7 +27,7 @@ class CreateTicket{
             })
             // console.log(data);
             // res.send(data)
-            res.render('createTicket/profile', {user, data, history})
+            res.render('createTicket/profile', {user, data, history, message})
         } catch (error) {
             console.log(error);
             res.send(error)
@@ -34,9 +37,10 @@ class CreateTicket{
     static async getCreateBooking(req, res) {
         try {
             const {user} = req.session
+            const {errors} = req.query
             let dataBandara = JSON.parse(await fs.readFile("./Data/bandara_indonesia.json"))
             // console.log(dataBandara);
-            res.render('createTicket/booking', {user, dataBandara})
+            res.render('createTicket/booking', {user, dataBandara, errors})
         } catch (error) {
             console.log(error);
             res.send(error)
@@ -53,12 +57,20 @@ class CreateTicket{
             await Ticket.create({
                 BookingId: newBooking.id
             })
-
+            req.session.booking = newBooking
             req.session.bookingId = newBooking.id
             res.redirect('/booking/add/plane')
         } catch (error) {
-            console.log(error);
-            res.send(error)
+            if (error.name === "SequelizeValidationError") { {
+                let errors = error.errors.map(err => {
+                    return err.message
+                })
+                res.redirect(`/booking/add?errors=${errors}`)
+            }
+            } else {
+                console.log(error);
+                res.send(error)
+            }
         }
     }
 
@@ -66,8 +78,11 @@ class CreateTicket{
 
     static async getPlane(req,res) {
         try {
-            const dataPlane = await Plane.findAll({})
-            res.render('createTicket/plane', {dataPlane})
+
+            let dataPlane = await Plane.findAll({})
+
+            const {error} = req.query
+            res.render('createTicket/plane', {dataPlane, error})
         } catch (error) {
             console.log(error);
             res.send(error)
@@ -79,6 +94,7 @@ class CreateTicket{
     static async getConfirmation(req, res) {
         try {
            const {id} = req.params 
+           
            const dataPesawat = await Plane.findByPk(id)
            
            res.render('createTicket/confirmation', {dataPesawat, id})
@@ -112,25 +128,50 @@ class CreateTicket{
         try {
             const userId = req.session.user.id
             const {id} = req.params
+            
             let dataTiket = await Ticket.findByPk(id)
             const dataPesawat = await Plane.findByPk(dataTiket.PlaneId)
             const dataBooking = await Booking.findByPk(dataTiket.BookingId)
+            
             await dataPesawat.decrement({
                 totalSeat: dataBooking.jumlahTiket
             })
+            
             let kalkulasiHarga = dataPesawat.price * +dataBooking.jumlahTiket
             
             await dataTiket.update({
                 totalPrice: kalkulasiHarga
             })
+            
             const confirmation = await Ticket.findOne({
                 where: {
                     id: id
                 },
                 include : [Booking, Plane]
             })
+            
             kalkulasiHarga = formatRupiah(kalkulasiHarga)
-            res.render('createTicket/printTicket', {confirmation, kalkulasiHarga, userId})
+
+            // 2. Generate the QR Code Data URL
+            // You can customize this string to contain any info you want the scanner to read
+            const text = `https://giphy.com/gifs/highcastle-high-castle-the-man-in-tv-RfBCbS7lk0OX9TLrOi`;
+            const qrImage = await QRCode.toDataURL(text);
+            
+            // 3. Pass the qrImage to your view
+            res.render('createTicket/printTicket', {confirmation, kalkulasiHarga, userId, qrImage})
+        } catch (error) {
+            console.log(error);
+            res.send(error)
+        }
+    }
+
+    static async deleteHistory (req, res) {
+        try {
+            const {userId} = req.params
+            let data = await Booking.findOne({where: {id: {[Op.eq]: userId}}})
+            let tanggal = data.createdAt
+            await Booking.destroy({where: {id: {[Op.eq]: userId}}})
+            res.redirect(`/booking/profile/${userId}?message=Booking tanggal ${tanggal} sudah terhapus`)
         } catch (error) {
             console.log(error);
             res.send(error)

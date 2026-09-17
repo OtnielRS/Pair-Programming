@@ -76,14 +76,19 @@
     </style>
 </head>
 <body>
+    <%- include('../partial/navbar.ejs') %>
     <h1>Booking Page</h1>
     <form action="/booking/add" method="POST">
         <p>
-            <label for="jumlahTiket">Jumlah Tiket (Max. 2 per Account) : </label>
-            <select name="jumlahTiket" id="">
+            <label for="jumlahTiket">Jumlah Tiket : </label>
+            <% if (errors) { %>
+             <p style="color: red;"><%= errors %></p>
+            <% } %>
+            <!-- <select name="jumlahTiket" id="">
                 <option value="1">1</option>
                 <option value="2">2</option>
-            </select>
+            </select> -->
+            <input type="number" name="jumlahTiket">
         </p>
 
         <p>

@@ -67,8 +67,11 @@
     </style>
 </head>
 <body>
+    <%- include('../partial/navbar.ejs') %>
     <h1>List of Our Agent!</h1>
-
+    <% if (error) { %>
+     <p style="color: red;"><%= error %></p>
+    <% } %>
     <table>
         <tr>
             <th>No.</th>

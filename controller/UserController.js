@@ -12,34 +12,13 @@ class UserController {
     //     res.render('homeAndUsers/homepage', {data : null})
     // }
     // Homepage
+
+
     static async homePage(req,res) {
         try {
 
             res.render('homeAndUsers/homepage')
-            // const {user} = req.session
-            // // console.log(userId);
-            
-            // const data = await User.findOne({
-            //     include: UserProfile,
-            //     where : {
-            //         id: user.id
-            //     }
-            //     })
-        // res.render('homeAndUsers/homepage', {data, welcome : `Welcome ${data?.UserProfile?.firstName} ${data?.UserProfile?.lastName}`})
-
-            // // let data = ''
-            // // let welcome = ''
-            // // if (userId) {
-            // //     data = await User.findOne({
-            // //     include: UserProfile,
-            // //     where : {
-            // //         id: userId
-            // //     }
-            // //     })
-            // //      welcome = `Welcome ${data.UserProfile.firstName} ${data.UserProfile.lastName}`
-            // }else {
-            //     res.render('homeAndUsers/homepage', {data, welcome})
-            // }
+          
         } catch (error) {
             console.log(error);
             res.render('homeAndUsers/homepage')

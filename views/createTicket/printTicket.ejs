@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,20 +15,24 @@
             padding: 50px 20px;
             margin: 0;
         }
+
         h1 {
-            color: #28a745; /* Hijau menandakan sukses */
+            color: #28a745;
+            /* Hijau menandakan sukses */
             margin-bottom: 25px;
         }
+
         .detail-ticket {
             background-color: #fff;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
             width: 100%;
             max-width: 400px;
             border-top: 6px solid #0056b3;
             margin-bottom: 30px;
         }
+
         /* Style untuk Label (Paragraf Ganjil) */
         .detail-ticket p:nth-child(odd) {
             font-size: 0.85rem;
@@ -37,6 +42,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
         }
+
         /* Style untuk Value (Paragraf Genap) */
         .detail-ticket p:nth-child(even) {
             font-size: 1.2rem;
@@ -46,12 +52,15 @@
             padding-bottom: 10px;
             border-bottom: 1px dashed #ddd;
         }
+
         /* Menghilangkan garis bawah pada elemen terakhir */
         .detail-ticket p:last-child {
             border-bottom: none;
-            color: #d93025; /* Warna menonjol untuk total harga */
+            color: #d93025;
+            /* Warna menonjol untuk total harga */
             font-size: 1.5rem;
         }
+
         a {
             background-color: #6c757d;
             color: white;
@@ -61,29 +70,50 @@
             font-weight: bold;
             transition: 0.3s;
         }
+
         a:hover {
             background-color: #5a6268;
         }
     </style>
 </head>
+
 <body>
+    <%- include('../partial/navbar.ejs') %>
     <h1>Please Pay Your Ticket!</h1>
 
     <div class="detail-ticket">
         <p>Jumlah Ticket</p>
-        <p><%= confirmation.Booking.jumlahTiket %></p>
+        <p>
+            <%= confirmation.Booking.jumlahTiket %>
+        </p>
         <p>Group Airlines</p>
-        <p><%= confirmation.Plane.groupName %></p>
+        <p>
+            <%= confirmation.Plane.groupName %>
+        </p>
         <p>Class</p>
-        <p><%= confirmation.Plane.className %></p>
+        <p>
+            <%= confirmation.Plane.className %>
+        </p>
         <p>Tanggal Berangkat</p>
-        <p><%= confirmation.Booking.tanggalBerangkat %></p>
+        <p>
+            <%= confirmation.Booking.tanggalBerangkat %>
+        </p>
         <p>Nama Bandara</p>
-        <p><%= confirmation.Booking.bandara %></p>
+        <p>
+            <%= confirmation.Booking.bandara %>
+        </p>
         <p>Total Harga Tiket</p>
-        <p><%= kalkulasiHarga %></p>
+        <p>
+            <%= kalkulasiHarga %>
+        </p>
+    </div>
+
+    <div class="ticket-qr">
+        <p>Scan for Ticket Details:</p>
+        <img src="<%= qrImage %>" alt="Ticket QR Code" />
     </div>
     <a href="/booking/profile/<%= userId %>">Back to Profile</a>
     <a href="/logout">Log Out</a>
 </body>
+
 </html>

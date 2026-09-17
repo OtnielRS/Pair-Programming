@@ -18,6 +18,9 @@ const middleware = function (req, res, next) {
 
 // history of transaction 
 router.get('/profile/:userId', middleware, CreateTicket.profile)
+router.get('/profile/:userId/delete', middleware, CreateTicket.deleteHistory)
+
+
 
 router.get('/add', middleware , CreateTicket.getCreateBooking)
 router.post('/add', middleware,  CreateTicket.postCreateBooking)
@@ -32,5 +35,7 @@ router.post('/add/plane/:id/confirmation', middleware, CreateTicket.postConfirma
 
 // calculation Price
 router.get('/calculation/:id', middleware, CreateTicket.priceCalculation)
+
+
 
 module.exports = router

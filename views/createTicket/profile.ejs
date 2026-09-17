@@ -75,8 +75,16 @@
     </style>
 </head>
 <body>
-    <h1>Selamat Datang <%= data.firstName %> <%= data.lastName %></h1>
+    <%- include('../partial/navbar.ejs') %>
+    <% if (user.role === "admin") { %>
+        <h1>Selamat Datang Admin <%= data.firstName %> <%= data.lastName %></h1>
+        <a href="/user"></a>
+    <% } else {%>
+    <h1>Selamat Datang Pelanggan <%= data.firstName %> <%= data.lastName %></h1> <% } %>
     <h2>History Pembelian</h2>
+    <% if (message) { %>
+     <p style="color: lightcoral;"><%= message %></p>
+    <% } %>
 
     <% if (history < 1) { %>
      <p>Anda belum pernah booking. Ayo Booking!</p> <br>
@@ -88,6 +96,9 @@
                 <th>Bandara</th>
                 <th>Tanggal Berangkat</th>
                 <th>Pembelian Tanggal</th>
+                <% if (user.role === "admin") { %>
+                 <th>Action</th>
+                <% } %>
             </tr>
 
             <% history.forEach((element, i) => { %>
@@ -97,6 +108,9 @@
                     <td><%= element.bandara %></td>
                     <td><%= element.tanggalBerangkat %></td>
                     <td><%= element.createdAt %></td>
+                    <% if (user.role === "admin") { %>
+                    <td><a href="/booking/profile/<%= element.id %>/delete">Delete</a></td>
+                    <% } %>
                 </tr>
             <% }) %>
         </table>
