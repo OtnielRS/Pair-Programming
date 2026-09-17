@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "firstName": "Joko",
+    "lastName": "Anwar",
+    "phoneNum": "081234567890",
+    "address": "Jl. Sudirman No. 1, Jakarta",
+    "UserId": 1,
+    "createdAt": "2023-11-01T10:00:00Z",
+    "updatedAt": "2023-11-01T10:00:00Z"
+  },
+  {
+    "id": 2,
+    "firstName": "Budi",
+    "lastName": "Santoso",
+    "phoneNum": "089876543210",
+    "address": "Jl. Merdeka No. 45, Bandung",
+    "UserId": 2,
+    "createdAt": "2023-11-02T14:30:00Z",
+    "updatedAt": "2023-11-02T14:30:00Z"
+  },
+  {
+    "id": 3,
+    "firstName": "Siti",
+    "lastName": "Aminah",
+    "phoneNum": "085612349876",
+    "address": "Jl. Malioboro No. 10, Yogyakarta",
+    "UserId": 3,
+    "createdAt": "2023-11-03T09:15:00Z",
+    "updatedAt": "2023-11-03T09:15:00Z"
+  }
+]
