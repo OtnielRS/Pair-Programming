@@ -1,6 +1,16 @@
 const express = require('express');
-const router = express.Router();
-const UserController = require
+const router = express()
+const port = 3000;
+const userPages = require('./userPages.js')
+const booking = require('./createTicket.js')
 
 
-router.get('/', Controller.home)
+
+router.use('/', userPages)
+router.use('/booking', booking)
+
+
+
+module.exports = router
+
+

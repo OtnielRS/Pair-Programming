@@ -3,10 +3,10 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    await queryInterface.addColumn('User_Data', 'UserId', {
+    await queryInterface.addColumn("Users", "UserProfileId", {
       type: Sequelize.DataTypes.INTEGER,
-      references : {
-        model: "Users",
+      references: {
+        model: "UserProfiles",
         key: "id"
       },
       onDelete: 'cascade',
@@ -15,11 +15,6 @@ module.exports = {
   },
 
   async down (queryInterface, Sequelize) {
-    /**
-     * Add reverting commands here.
-     *
-     * Example:
-     * await queryInterface.dropTable('users');
-     */
+    await queryInterface.removeColumn("Users", "UserProfileId", {})
   }
 };

@@ -1,0 +1,1 @@
+console.log(Date(2026-12-12));

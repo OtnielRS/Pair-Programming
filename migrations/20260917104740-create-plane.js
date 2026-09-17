@@ -2,23 +2,26 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('User_Data', {
+    await queryInterface.createTable('Planes', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      firstName: {
+      groupName: {
         type: Sequelize.STRING
       },
-      lastname: {
+      className: {
         type: Sequelize.STRING
       },
-      phoneNum: {
-        type: Sequelize.STRING
+      totalSeat: {
+        type: Sequelize.INTEGER
       },
-      address: {
+      price: {
+        type: Sequelize.INTEGER
+      },
+      imageUrl: {
         type: Sequelize.STRING
       },
       createdAt: {
@@ -32,6 +35,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('User_Data');
+    await queryInterface.dropTable('Planes');
   }
 };

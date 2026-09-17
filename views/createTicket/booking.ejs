@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #0056b3;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            width: 100%;
+            max-width: 450px;
+            box-sizing: border-box;
+        }
+        form p {
+            margin: 15px 0;
+        }
+        label {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #444;
+            display: block;
+            margin-bottom: 8px;
+        }
+        select, input[type="date"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 14px;
+            background-color: #fafafa;
+            transition: border-color 0.3s;
+        }
+        select:focus, input[type="date"]:focus {
+            border-color: #0056b3;
+            outline: none;
+            background-color: #fff;
+        }
+        input[type="submit"] {
+            background-color: #0056b3;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+    <h1>Booking Page</h1>
+    <form action="/booking/add" method="POST">
+        <p>
+            <label for="jumlahTiket">Jumlah Tiket (Max. 2 per Account) : </label>
+            <select name="jumlahTiket" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="bandara">Bandara Keberangkatan : </label>
+            <select name="bandara" id="">
+                <% dataBandara.forEach(element => { %>
+                 <option value="<%= element.bandara %>"><%= element.bandara %></option>
+                <% }) %>
+            </select>
+        </p>
+        <p>
+            <label for="tanggalBerangkat">Tanggal Berangkat : </label>
+            <input type="date" name="tanggalBerangkat">
+        </p>
+
+        <input type="submit" name="submit" value="Lanjutkan">
+    </form>
+</body>
+</html>

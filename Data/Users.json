@@ -1,0 +1,802 @@
+[
+    {
+        "id": 1,
+        "userName": "sitipratama1",
+        "password": "hashed_pass_309",
+        "email": "siti.pratama1@example.com",
+        "role": "admin",
+        "UserProfileId": 1
+    },
+    {
+        "id": 2,
+        "userName": "ekowijaya2",
+        "password": "hashed_pass_472",
+        "email": "eko.wijaya2@example.com",
+        "role": "admin",
+        "UserProfileId": 2
+    },
+    {
+        "id": 3,
+        "userName": "ayupurnama3",
+        "password": "hashed_pass_819",
+        "email": "ayu.purnama3@example.com",
+        "role": "admin",
+        "UserProfileId": 3
+    },
+    {
+        "id": 4,
+        "userName": "yunisiregar4",
+        "password": "hashed_pass_126",
+        "email": "yuni.siregar4@example.com",
+        "role": "admin",
+        "UserProfileId": 4
+    },
+    {
+        "id": 5,
+        "userName": "srisaputra5",
+        "password": "hashed_pass_244",
+        "email": "sri.saputra5@example.com",
+        "role": "admin",
+        "UserProfileId": 5
+    },
+    {
+        "id": 6,
+        "userName": "hendrapurnama6",
+        "password": "hashed_pass_912",
+        "email": "hendra.purnama6@example.com",
+        "role": "user",
+        "UserProfileId": 6
+    },
+    {
+        "id": 7,
+        "userName": "ayusiregar7",
+        "password": "hashed_pass_376",
+        "email": "ayu.siregar7@example.com",
+        "role": "user",
+        "UserProfileId": 7
+    },
+    {
+        "id": 8,
+        "userName": "dodinugroho8",
+        "password": "hashed_pass_769",
+        "email": "dodi.nugroho8@example.com",
+        "role": "user",
+        "UserProfileId": 8
+    },
+    {
+        "id": 9,
+        "userName": "rudisantoso9",
+        "password": "hashed_pass_351",
+        "email": "rudi.santoso9@example.com",
+        "role": "user",
+        "UserProfileId": 9
+    },
+    {
+        "id": 10,
+        "userName": "ayusiregar10",
+        "password": "hashed_pass_526",
+        "email": "ayu.siregar10@example.com",
+        "role": "user",
+        "UserProfileId": 10
+    },
+    {
+        "id": 11,
+        "userName": "budisanjaya11",
+        "password": "hashed_pass_621",
+        "email": "budi.sanjaya11@example.com",
+        "role": "user",
+        "UserProfileId": 11
+    },
+    {
+        "id": 12,
+        "userName": "yunisanjaya12",
+        "password": "hashed_pass_707",
+        "email": "yuni.sanjaya12@example.com",
+        "role": "user",
+        "UserProfileId": 12
+    },
+    {
+        "id": 13,
+        "userName": "dodikusuma13",
+        "password": "hashed_pass_411",
+        "email": "dodi.kusuma13@example.com",
+        "role": "user",
+        "UserProfileId": 13
+    },
+    {
+        "id": 14,
+        "userName": "mayasanjaya14",
+        "password": "hashed_pass_157",
+        "email": "maya.sanjaya14@example.com",
+        "role": "user",
+        "UserProfileId": 14
+    },
+    {
+        "id": 15,
+        "userName": "iwanhidayat15",
+        "password": "hashed_pass_510",
+        "email": "iwan.hidayat15@example.com",
+        "role": "user",
+        "UserProfileId": 15
+    },
+    {
+        "id": 16,
+        "userName": "ninanugroho16",
+        "password": "hashed_pass_967",
+        "email": "nina.nugroho16@example.com",
+        "role": "user",
+        "UserProfileId": 16
+    },
+    {
+        "id": 17,
+        "userName": "andinugroho17",
+        "password": "hashed_pass_313",
+        "email": "andi.nugroho17@example.com",
+        "role": "user",
+        "UserProfileId": 17
+    },
+    {
+        "id": 18,
+        "userName": "jokohidayat18",
+        "password": "hashed_pass_689",
+        "email": "joko.hidayat18@example.com",
+        "role": "user",
+        "UserProfileId": 18
+    },
+    {
+        "id": 19,
+        "userName": "dodihidayat19",
+        "password": "hashed_pass_655",
+        "email": "dodi.hidayat19@example.com",
+        "role": "user",
+        "UserProfileId": 19
+    },
+    {
+        "id": 20,
+        "userName": "dodipurnama20",
+        "password": "hashed_pass_455",
+        "email": "dodi.purnama20@example.com",
+        "role": "user",
+        "UserProfileId": 20
+    },
+    {
+        "id": 21,
+        "userName": "rizkygunawan21",
+        "password": "hashed_pass_284",
+        "email": "rizky.gunawan21@example.com",
+        "role": "user",
+        "UserProfileId": 21
+    },
+    {
+        "id": 22,
+        "userName": "rinipurnama22",
+        "password": "hashed_pass_277",
+        "email": "rini.purnama22@example.com",
+        "role": "user",
+        "UserProfileId": 22
+    },
+    {
+        "id": 23,
+        "userName": "ekopurnama23",
+        "password": "hashed_pass_616",
+        "email": "eko.purnama23@example.com",
+        "role": "user",
+        "UserProfileId": 23
+    },
+    {
+        "id": 24,
+        "userName": "jokopurnama24",
+        "password": "hashed_pass_777",
+        "email": "joko.purnama24@example.com",
+        "role": "user",
+        "UserProfileId": 24
+    },
+    {
+        "id": 25,
+        "userName": "dewipratama25",
+        "password": "hashed_pass_107",
+        "email": "dewi.pratama25@example.com",
+        "role": "user",
+        "UserProfileId": 25
+    },
+    {
+        "id": 26,
+        "userName": "srisanjaya26",
+        "password": "hashed_pass_677",
+        "email": "sri.sanjaya26@example.com",
+        "role": "user",
+        "UserProfileId": 26
+    },
+    {
+        "id": 27,
+        "userName": "andigunawan27",
+        "password": "hashed_pass_806",
+        "email": "andi.gunawan27@example.com",
+        "role": "user",
+        "UserProfileId": 27
+    },
+    {
+        "id": 28,
+        "userName": "iwansanjaya28",
+        "password": "hashed_pass_253",
+        "email": "iwan.sanjaya28@example.com",
+        "role": "user",
+        "UserProfileId": 28
+    },
+    {
+        "id": 29,
+        "userName": "srihartono29",
+        "password": "hashed_pass_726",
+        "email": "sri.hartono29@example.com",
+        "role": "user",
+        "UserProfileId": 29
+    },
+    {
+        "id": 30,
+        "userName": "sitisanjaya30",
+        "password": "hashed_pass_785",
+        "email": "siti.sanjaya30@example.com",
+        "role": "user",
+        "UserProfileId": 30
+    },
+    {
+        "id": 31,
+        "userName": "mayawahyudi31",
+        "password": "hashed_pass_672",
+        "email": "maya.wahyudi31@example.com",
+        "role": "user",
+        "UserProfileId": 31
+    },
+    {
+        "id": 32,
+        "userName": "ninakusuma32",
+        "password": "hashed_pass_762",
+        "email": "nina.kusuma32@example.com",
+        "role": "user",
+        "UserProfileId": 32
+    },
+    {
+        "id": 33,
+        "userName": "sarisetiawan33",
+        "password": "hashed_pass_598",
+        "email": "sari.setiawan33@example.com",
+        "role": "user",
+        "UserProfileId": 33
+    },
+    {
+        "id": 34,
+        "userName": "ekohidayat34",
+        "password": "hashed_pass_296",
+        "email": "eko.hidayat34@example.com",
+        "role": "user",
+        "UserProfileId": 34
+    },
+    {
+        "id": 35,
+        "userName": "putrikusuma35",
+        "password": "hashed_pass_807",
+        "email": "putri.kusuma35@example.com",
+        "role": "user",
+        "UserProfileId": 35
+    },
+    {
+        "id": 36,
+        "userName": "saripratama36",
+        "password": "hashed_pass_286",
+        "email": "sari.pratama36@example.com",
+        "role": "user",
+        "UserProfileId": 36
+    },
+    {
+        "id": 37,
+        "userName": "rinisanjaya37",
+        "password": "hashed_pass_813",
+        "email": "rini.sanjaya37@example.com",
+        "role": "user",
+        "UserProfileId": 37
+    },
+    {
+        "id": 38,
+        "userName": "ayuhartono38",
+        "password": "hashed_pass_851",
+        "email": "ayu.hartono38@example.com",
+        "role": "user",
+        "UserProfileId": 38
+    },
+    {
+        "id": 39,
+        "userName": "srisanjaya39",
+        "password": "hashed_pass_916",
+        "email": "sri.sanjaya39@example.com",
+        "role": "user",
+        "UserProfileId": 39
+    },
+    {
+        "id": 40,
+        "userName": "dodiwahyudi40",
+        "password": "hashed_pass_942",
+        "email": "dodi.wahyudi40@example.com",
+        "role": "user",
+        "UserProfileId": 40
+    },
+    {
+        "id": 41,
+        "userName": "ekosanjaya41",
+        "password": "hashed_pass_642",
+        "email": "eko.sanjaya41@example.com",
+        "role": "user",
+        "UserProfileId": 41
+    },
+    {
+        "id": 42,
+        "userName": "mayasantoso42",
+        "password": "hashed_pass_752",
+        "email": "maya.santoso42@example.com",
+        "role": "user",
+        "UserProfileId": 42
+    },
+    {
+        "id": 43,
+        "userName": "srisantoso43",
+        "password": "hashed_pass_208",
+        "email": "sri.santoso43@example.com",
+        "role": "user",
+        "UserProfileId": 43
+    },
+    {
+        "id": 44,
+        "userName": "yunipratama44",
+        "password": "hashed_pass_919",
+        "email": "yuni.pratama44@example.com",
+        "role": "user",
+        "UserProfileId": 44
+    },
+    {
+        "id": 45,
+        "userName": "ayusetiawan45",
+        "password": "hashed_pass_238",
+        "email": "ayu.setiawan45@example.com",
+        "role": "user",
+        "UserProfileId": 45
+    },
+    {
+        "id": 46,
+        "userName": "dodihidayat46",
+        "password": "hashed_pass_831",
+        "email": "dodi.hidayat46@example.com",
+        "role": "user",
+        "UserProfileId": 46
+    },
+    {
+        "id": 47,
+        "userName": "yunisantoso47",
+        "password": "hashed_pass_316",
+        "email": "yuni.santoso47@example.com",
+        "role": "user",
+        "UserProfileId": 47
+    },
+    {
+        "id": 48,
+        "userName": "jokogunawan48",
+        "password": "hashed_pass_859",
+        "email": "joko.gunawan48@example.com",
+        "role": "user",
+        "UserProfileId": 48
+    },
+    {
+        "id": 49,
+        "userName": "sarisiregar49",
+        "password": "hashed_pass_294",
+        "email": "sari.siregar49@example.com",
+        "role": "user",
+        "UserProfileId": 49
+    },
+    {
+        "id": 50,
+        "userName": "jokopratama50",
+        "password": "hashed_pass_887",
+        "email": "joko.pratama50@example.com",
+        "role": "user",
+        "UserProfileId": 50
+    },
+    {
+        "id": 51,
+        "userName": "ninasaputra51",
+        "password": "hashed_pass_786",
+        "email": "nina.saputra51@example.com",
+        "role": "user",
+        "UserProfileId": 51
+    },
+    {
+        "id": 52,
+        "userName": "ekosanjaya52",
+        "password": "hashed_pass_269",
+        "email": "eko.sanjaya52@example.com",
+        "role": "user",
+        "UserProfileId": 52
+    },
+    {
+        "id": 53,
+        "userName": "ayusanjaya53",
+        "password": "hashed_pass_206",
+        "email": "ayu.sanjaya53@example.com",
+        "role": "user",
+        "UserProfileId": 53
+    },
+    {
+        "id": 54,
+        "userName": "dewipurnama54",
+        "password": "hashed_pass_545",
+        "email": "dewi.purnama54@example.com",
+        "role": "user",
+        "UserProfileId": 54
+    },
+    {
+        "id": 55,
+        "userName": "ekosanjaya55",
+        "password": "hashed_pass_590",
+        "email": "eko.sanjaya55@example.com",
+        "role": "user",
+        "UserProfileId": 55
+    },
+    {
+        "id": 56,
+        "userName": "dodinugroho56",
+        "password": "hashed_pass_293",
+        "email": "dodi.nugroho56@example.com",
+        "role": "user",
+        "UserProfileId": 56
+    },
+    {
+        "id": 57,
+        "userName": "hendrahartono57",
+        "password": "hashed_pass_262",
+        "email": "hendra.hartono57@example.com",
+        "role": "user",
+        "UserProfileId": 57
+    },
+    {
+        "id": 58,
+        "userName": "putrikusuma58",
+        "password": "hashed_pass_238",
+        "email": "putri.kusuma58@example.com",
+        "role": "user",
+        "UserProfileId": 58
+    },
+    {
+        "id": 59,
+        "userName": "sitiwahyudi59",
+        "password": "hashed_pass_842",
+        "email": "siti.wahyudi59@example.com",
+        "role": "user",
+        "UserProfileId": 59
+    },
+    {
+        "id": 60,
+        "userName": "rizkyhartono60",
+        "password": "hashed_pass_752",
+        "email": "rizky.hartono60@example.com",
+        "role": "user",
+        "UserProfileId": 60
+    },
+    {
+        "id": 61,
+        "userName": "rinisanjaya61",
+        "password": "hashed_pass_537",
+        "email": "rini.sanjaya61@example.com",
+        "role": "user",
+        "UserProfileId": 61
+    },
+    {
+        "id": 62,
+        "userName": "putrisaputra62",
+        "password": "hashed_pass_716",
+        "email": "putri.saputra62@example.com",
+        "role": "user",
+        "UserProfileId": 62
+    },
+    {
+        "id": 63,
+        "userName": "hendrasiregar63",
+        "password": "hashed_pass_479",
+        "email": "hendra.siregar63@example.com",
+        "role": "user",
+        "UserProfileId": 63
+    },
+    {
+        "id": 64,
+        "userName": "aguswahyudi64",
+        "password": "hashed_pass_524",
+        "email": "agus.wahyudi64@example.com",
+        "role": "user",
+        "UserProfileId": 64
+    },
+    {
+        "id": 65,
+        "userName": "andilestari65",
+        "password": "hashed_pass_736",
+        "email": "andi.lestari65@example.com",
+        "role": "user",
+        "UserProfileId": 65
+    },
+    {
+        "id": 66,
+        "userName": "hendranugroho66",
+        "password": "hashed_pass_513",
+        "email": "hendra.nugroho66@example.com",
+        "role": "user",
+        "UserProfileId": 66
+    },
+    {
+        "id": 67,
+        "userName": "dewihidayat67",
+        "password": "hashed_pass_706",
+        "email": "dewi.hidayat67@example.com",
+        "role": "user",
+        "UserProfileId": 67
+    },
+    {
+        "id": 68,
+        "userName": "ayusiregar68",
+        "password": "hashed_pass_738",
+        "email": "ayu.siregar68@example.com",
+        "role": "user",
+        "UserProfileId": 68
+    },
+    {
+        "id": 69,
+        "userName": "putripratama69",
+        "password": "hashed_pass_588",
+        "email": "putri.pratama69@example.com",
+        "role": "user",
+        "UserProfileId": 69
+    },
+    {
+        "id": 70,
+        "userName": "andisaputra70",
+        "password": "hashed_pass_495",
+        "email": "andi.saputra70@example.com",
+        "role": "user",
+        "UserProfileId": 70
+    },
+    {
+        "id": 71,
+        "userName": "yunipratama71",
+        "password": "hashed_pass_581",
+        "email": "yuni.pratama71@example.com",
+        "role": "user",
+        "UserProfileId": 71
+    },
+    {
+        "id": 72,
+        "userName": "sitisanjaya72",
+        "password": "hashed_pass_419",
+        "email": "siti.sanjaya72@example.com",
+        "role": "user",
+        "UserProfileId": 72
+    },
+    {
+        "id": 73,
+        "userName": "putrisiregar73",
+        "password": "hashed_pass_381",
+        "email": "putri.siregar73@example.com",
+        "role": "user",
+        "UserProfileId": 73
+    },
+    {
+        "id": 74,
+        "userName": "sitisantoso74",
+        "password": "hashed_pass_121",
+        "email": "siti.santoso74@example.com",
+        "role": "user",
+        "UserProfileId": 74
+    },
+    {
+        "id": 75,
+        "userName": "hendrakusuma75",
+        "password": "hashed_pass_399",
+        "email": "hendra.kusuma75@example.com",
+        "role": "user",
+        "UserProfileId": 75
+    },
+    {
+        "id": 76,
+        "userName": "srihartono76",
+        "password": "hashed_pass_201",
+        "email": "sri.hartono76@example.com",
+        "role": "user",
+        "UserProfileId": 76
+    },
+    {
+        "id": 77,
+        "userName": "rizkypurnama77",
+        "password": "hashed_pass_183",
+        "email": "rizky.purnama77@example.com",
+        "role": "user",
+        "UserProfileId": 77
+    },
+    {
+        "id": 78,
+        "userName": "sarihartono78",
+        "password": "hashed_pass_851",
+        "email": "sari.hartono78@example.com",
+        "role": "user",
+        "UserProfileId": 78
+    },
+    {
+        "id": 79,
+        "userName": "sarilestari79",
+        "password": "hashed_pass_943",
+        "email": "sari.lestari79@example.com",
+        "role": "user",
+        "UserProfileId": 79
+    },
+    {
+        "id": 80,
+        "userName": "iwanpurnama80",
+        "password": "hashed_pass_183",
+        "email": "iwan.purnama80@example.com",
+        "role": "user",
+        "UserProfileId": 80
+    },
+    {
+        "id": 81,
+        "userName": "sarisiregar81",
+        "password": "hashed_pass_569",
+        "email": "sari.siregar81@example.com",
+        "role": "user",
+        "UserProfileId": 81
+    },
+    {
+        "id": 82,
+        "userName": "jokohidayat82",
+        "password": "hashed_pass_780",
+        "email": "joko.hidayat82@example.com",
+        "role": "user",
+        "UserProfileId": 82
+    },
+    {
+        "id": 83,
+        "userName": "ekohartono83",
+        "password": "hashed_pass_211",
+        "email": "eko.hartono83@example.com",
+        "role": "user",
+        "UserProfileId": 83
+    },
+    {
+        "id": 84,
+        "userName": "riniwijaya84",
+        "password": "hashed_pass_112",
+        "email": "rini.wijaya84@example.com",
+        "role": "user",
+        "UserProfileId": 84
+    },
+    {
+        "id": 85,
+        "userName": "jokosaputra85",
+        "password": "hashed_pass_657",
+        "email": "joko.saputra85@example.com",
+        "role": "user",
+        "UserProfileId": 85
+    },
+    {
+        "id": 86,
+        "userName": "yunisiregar86",
+        "password": "hashed_pass_135",
+        "email": "yuni.siregar86@example.com",
+        "role": "user",
+        "UserProfileId": 86
+    },
+    {
+        "id": 87,
+        "userName": "srihidayat87",
+        "password": "hashed_pass_807",
+        "email": "sri.hidayat87@example.com",
+        "role": "user",
+        "UserProfileId": 87
+    },
+    {
+        "id": 88,
+        "userName": "dodikusuma88",
+        "password": "hashed_pass_215",
+        "email": "dodi.kusuma88@example.com",
+        "role": "user",
+        "UserProfileId": 88
+    },
+    {
+        "id": 89,
+        "userName": "hendrasiregar89",
+        "password": "hashed_pass_647",
+        "email": "hendra.siregar89@example.com",
+        "role": "user",
+        "UserProfileId": 89
+    },
+    {
+        "id": 90,
+        "userName": "ekowahyudi90",
+        "password": "hashed_pass_205",
+        "email": "eko.wahyudi90@example.com",
+        "role": "user",
+        "UserProfileId": 90
+    },
+    {
+        "id": 91,
+        "userName": "putrilestari91",
+        "password": "hashed_pass_116",
+        "email": "putri.lestari91@example.com",
+        "role": "user",
+        "UserProfileId": 91
+    },
+    {
+        "id": 92,
+        "userName": "aguspurnama92",
+        "password": "hashed_pass_196",
+        "email": "agus.purnama92@example.com",
+        "role": "user",
+        "UserProfileId": 92
+    },
+    {
+        "id": 93,
+        "userName": "rudihidayat93",
+        "password": "hashed_pass_268",
+        "email": "rudi.hidayat93@example.com",
+        "role": "user",
+        "UserProfileId": 93
+    },
+    {
+        "id": 94,
+        "userName": "andikusuma94",
+        "password": "hashed_pass_170",
+        "email": "andi.kusuma94@example.com",
+        "role": "user",
+        "UserProfileId": 94
+    },
+    {
+        "id": 95,
+        "userName": "dodinugroho95",
+        "password": "hashed_pass_638",
+        "email": "dodi.nugroho95@example.com",
+        "role": "user",
+        "UserProfileId": 95
+    },
+    {
+        "id": 96,
+        "userName": "putrihidayat96",
+        "password": "hashed_pass_449",
+        "email": "putri.hidayat96@example.com",
+        "role": "user",
+        "UserProfileId": 96
+    },
+    {
+        "id": 97,
+        "userName": "ekonugroho97",
+        "password": "hashed_pass_790",
+        "email": "eko.nugroho97@example.com",
+        "role": "user",
+        "UserProfileId": 97
+    },
+    {
+        "id": 98,
+        "userName": "yuniwijaya98",
+        "password": "hashed_pass_195",
+        "email": "yuni.wijaya98@example.com",
+        "role": "user",
+        "UserProfileId": 98
+    },
+    {
+        "id": 99,
+        "userName": "ayuwahyudi99",
+        "password": "hashed_pass_772",
+        "email": "ayu.wahyudi99@example.com",
+        "role": "user",
+        "UserProfileId": 99
+    },
+    {
+        "id": 100,
+        "userName": "ninanugroho100",
+        "password": "hashed_pass_618",
+        "email": "nina.nugroho100@example.com",
+        "role": "user",
+        "UserProfileId": 100
+    }
+]

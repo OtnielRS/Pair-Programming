@@ -1,0 +1,58 @@
+[
+  {
+    "groupName": "Garuda Indonesia Group",
+    "className": "Economy",
+    "totalSeat": 10,
+    "price": 499000,
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW16naKeRQO-iW2RhyNua8-n74DW_N86Dcif6GyZnI_Q&s=10"
+  },
+  {
+    "groupName": "Garuda Indonesia Group",
+    "className": "Business",
+    "totalSeat": 5,
+    "price": 950000,
+    "imageUrl": "https://storage.googleapis.com/wpc-storage/jadibumn.id/2024/09/d49257ac-image-1024x576.png"
+  },
+  {
+    "groupName": "Lion Air Group",
+    "className": "Economy",
+    "totalSeat": 10,
+    "price": 400000,
+    "imageUrl": "https://www.aspirasipublik.com/wp-content/uploads/2021/08/Lion-Air-Group-Terus-Melakukan-Evaluasi-Kinerja-serta-Menjalankan-Perbaikan-1.jpg"
+  },
+  {
+    "groupName": "Lion Air Group",
+    "className": "Business",
+    "totalSeat": 5,
+    "price": 800000,
+    "imageUrl": "https://images.bisnis.com/posts/2025/02/25/1842516/28112022-bi-ptb-01-penerbangan_1733140056.jpg"
+  },
+  {
+    "groupName": "Sriwijaya Air Group",
+    "className": "Economy",
+    "totalSeat": 10,
+    "price": 150000,
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMQ0ya14_CFnzekSYtKcDN1_uvbq10FBQ-xQASNyCJsg&s=10"
+  },
+  {
+    "groupName": "Sriwijaya Air Group",
+    "className": "Business",
+    "totalSeat": 5,
+    "price": 650000,
+    "imageUrl": "https://awsimages.detik.net.id/visual/2019/09/30/52b54772-4b62-490e-9378-db3ced2b01bf_169.jpeg?w=1200"
+  },
+  {
+    "groupName": "Indonesia AirAsia",
+    "className": "Economy",
+    "totalSeat": 10,
+    "price": 300000,
+    "imageUrl": "https://statik.tempo.co/data/2024/02/07/id_1277828/1277828_720.jpg"
+  },
+  {
+    "groupName": "Indonesia AirAsia",
+    "className": "Business",
+    "totalSeat": 5,
+    "price": 750000,
+    "imageUrl": "https://images.bisnis.com/posts/2020/12/11/1329662/airasia.jpg"
+  }
+]

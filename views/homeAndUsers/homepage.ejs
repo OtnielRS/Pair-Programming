@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Menengah-kan vertikal khusus homepage */
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #0056b3;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            text-align: center;
+            margin-top: 0;
+        }
+        h2 {
+            color: #666;
+            font-size: 1.2rem;
+            font-weight: normal;
+            margin-bottom: 30px;
+            text-align: center;
+            margin-top: 0;
+        }
+        a {
+            background-color: #0056b3;
+            color: white;
+            padding: 14px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 86, 179, 0.2);
+            width: 100%;
+            max-width: 250px;
+            text-align: center;
+        }
+        a:hover {
+            background-color: #004494;
+        }
+    </style>
 </head>
+
 <body>
     <h1>Selamat datang di JagoTiket</h1>
+    <h2>Liburan ke Bali hanya cukup Sekali Login</h2>
 
-    <a href="">Login</a>
+    <a href="/login">Login</a>
 </body>
+
 </html>

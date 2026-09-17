@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose your best Plane</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #0056b3;
+            margin-bottom: 25px;
+        }
+        table {
+            background-color: #fff;
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 900px;
+            border-radius: 10px;
+            overflow: hidden; /* Agar border-radius pada tabel berfungsi */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            background-color: #0056b3;
+            color: white;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+        }
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+        img {
+            width: 120px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        td a {
+            background-color: #0056b3;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        td a:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+    <h1>List of Our Agent!</h1>
+
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Gambar Pesawat</th>
+            <th>Nama Agent</th>
+            <th>Class</th>
+            <th>Kursi Tersedia</th>
+            <th>Harga</th>
+            <th>Action</th>
+        </tr>
+
+        <% dataPlane.forEach((element, i) => { %>
+         <tr>
+            <td><%= i + 1 %></td>
+            <td><img src="<%= element.imageUrl %>" alt=""></td>
+            <td><%= element.groupName %></td>
+            <td><%= element.className %></td>
+            <td><%= element.totalSeat %></td>
+            <td><%= element.changeToRupiah %></td>
+            <td><a href="/booking/add/plane/<%= element.id %>/confirmation">Saya Pilih Ini!</a></td>
+         </tr>
+        <% }) %>
+    </table>
+</body>
+</html>
