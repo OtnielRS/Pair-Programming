@@ -79,10 +79,10 @@ class CreateTicket{
     static async getPlane(req,res) {
         try {
 
-            let dataPlane = await Plane.findAll({})
+            const availablePlanes = await Plane.getAvailablePlanes()
 
             const {error} = req.query
-            res.render('createTicket/plane', {dataPlane, error})
+            res.render('createTicket/plane', {availablePlanes, error})
         } catch (error) {
             console.log(error);
             res.send(error)
@@ -152,12 +152,10 @@ class CreateTicket{
             
             kalkulasiHarga = formatRupiah(kalkulasiHarga)
 
-            // 2. Generate the QR Code Data URL
-            // You can customize this string to contain any info you want the scanner to read
+            
             const text = `https://giphy.com/gifs/highcastle-high-castle-the-man-in-tv-RfBCbS7lk0OX9TLrOi`;
             const qrImage = await QRCode.toDataURL(text);
             
-            // 3. Pass the qrImage to your view
             res.render('createTicket/printTicket', {confirmation, kalkulasiHarga, userId, qrImage})
         } catch (error) {
             console.log(error);

@@ -22,26 +22,15 @@ module.exports = (sequelize, DataTypes) => {
       return formatRupiah(this.price)
     }
 
-    static async classFilter(value) {
-      let data = ''
-      if (value === "Business") {
-        data = await Plane.findAll({
-          where: {
-            className : {
-              [Op.iLike] : `%${value}%`
-            }
-          } 
-        })
-      } else {
-        data = await Plane.findAll({
-           where: {
-            className : {
-              [Op.iLike] : `%${value}%`
-            }
-          } 
-        })
-      }
-      return data
+    static async getAvailablePlanes() {
+      return await Plane.findAll({
+        where: {
+          totalSeat: {
+            [Op.gt]: 0
+          }
+        },
+        order: [['price', 'ASC']]
+      });
     }
   }
   Plane.init({
