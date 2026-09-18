@@ -27,6 +27,7 @@ class CreateTicket{
             })
             // console.log(data);
             // res.send(data)
+            console.log(req.session.user);
             res.render('createTicket/profile', {user, data, history, message})
         } catch (error) {
             console.log(error);

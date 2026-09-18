@@ -16,6 +16,8 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       // Plane.belongsToMany(models.Booking, {through: "Tickets"})
       Plane.hasOne(models.Ticket, {foreignKey: "PlaneId"})
+      Plane.belongsToMany(models.Booking, {through: "Tickets"})
+
     }
 
     get changeToRupiah(){

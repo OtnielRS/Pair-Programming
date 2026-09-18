@@ -13,6 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       Booking.belongsTo(models.User, {foreignKey: "UserId"})
       Booking.hasOne(models.Ticket, {foreignKey: "BookingId"})
+      Booking.belongsToMany(models.Plane, {through: "Tickets"})
     }
   }
   Booking.init({
